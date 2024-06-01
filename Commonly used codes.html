@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eafen的自学小屋</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        <div class="container-fluid"> 
+            <a href="./index.html" class="navbar-brand">
+               <img src="./Trial Works/img/header-logo.png" alt="Logo" width="35px" height="40px" class="d-inline-block" style="background-color: aliceblue;">
+                Eafen的自学小屋
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-itme">
+                        <a href="./index.html" class="nav-link active" aria-current="page">首页</a>
+                    </li>
+                    <li class="nav-itme">
+                        <a href="./Introduction of Front-end Development.html" class="nav-link">前端开发</a>
+                    </li>
+                    <li class="nav-itme">
+                        <a href="./AIGC.html" class="nav-link">AIGC</a>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="p-5">
+      <div class="container">
+        <h2>文本编辑标签</h2>
+
+<p><code>&lt;h1&gt;</code> &quot;header level 1&quot; 一级标题
+<code>&lt;p&gt;</code> &quot;paragraph&quot; 段落
+<code>&lt;ul&gt;</code> &quot;unordered list&quot; 无序列表
+<code>&lt;ol&gt;</code> &quot;ordered list&quot; 有序列表
+<code>&lt;li&gt;</code> &quot;list item&quot; 列表项</p>
+
+<p><code>&lt;b&gt;</code> &quot;bold&quot; 加粗
+<code>&lt;i&gt;</code> &quot;italic&quot; 斜体
+<code>&lt;u&gt;</code> &quot;underline&quot; 下划线
+<code>&lt;s&gt;</code> &quot;strikethrough&quot; 删除线</p>
+
+<p><code>&lt;br&gt;</code> &quot;line break&quot; 换行
+<code>&lt;hr&gt;</code> &quot;horizontal rule&quot; 插入水平线</p>
+
+<p><code>&lt;table&gt;</code> 创建表格
+<code>&lt;tr&gt;</code> &quot;table row&quot; 表格行
+<code>&lt;th&gt;</code> &quot;table header&quot; 表格标题
+<code>&lt;td&gt;</code> &quot;table data&quot; 表格数据</p>
+
+<hr/>
+
+<h2>插入超链接</h2>
+
+<p><code>&lt;a&gt;</code> &quot;anchor&quot; 超链接
+<code>&lt;a href=&quot;&quot;&gt;</code> &quot;anchor with hypertext reference attribute&quot; 用于指定链接的目标地址
+<code>&lt;a target=&quot;&quot;&gt;</code><br/>1. <code>_self</code>: 这是默认值。链接会在当前窗口或者框架中打开。
+2. <code>_blank</code>: 链接会在新的、没有命名的窗口或者标签页中打开。
+3. <code>_parent</code>: 链接会在当前框架的父级框架中打开。如果没有父级框架，则表现和 <code>_self</code> 一样。
+4. <code>_top</code>: 链接会在顶级框架中打开，会将所有框架都取消并加载到整个浏览器窗口中。</p>
+
+<hr/>
+
+<h2><code>img</code>插入图片</h2>
+
+<p><code>&lt;img src=&quot;&quot; alt=&quot;&quot;&gt;</code>
+这段代码是HTML中的一个元素，用来嵌入图片。代码中的标签和属性解释如下：</p>
+
+<ul><li><code>&lt;img&gt;</code>：这是HTML中的“image”标签，用于在网页上显示图像。</li><li><code>src</code>（source的缩写）：指定图像文件的路径和文件名。这里的路径为空，意味着没有指定图像源。</li><li><code>alt</code>（alternative text的缩写）：提供图像的替代文本，这在图像无法显示时非常有用，也有助于搜索引擎优化（SEO）和为视障用户提供信息。</li><li>width=&quot;&quot; height=“” 可以用来定义宽高</li></ul>
+
+<p>这个标签的功能是向网页中嵌入一张图片。由于没有提供<code>src</code>属性的值，所以实际上这个标签不会显示任何图片。如果你想看到图片效果，需要在<code>src</code>属性中填入有效的图片URL或本地文件路径。</p>
+
+<hr/>
+
+<h2>常用的容器元素</h2>
+
+<p><code>&lt;div&gt;</code> division 分区 它用作一个通用的容器元素，主要用于组织页面布局和应用CSS样式，而不具有任何特定的语义含义。
+<code>&lt;span&gt;</code> span 即它可以&quot;span&quot;（跨越）选中文档中的一小段文本或内容，用于应用样式或其他特定的处理。<code>&lt;span&gt;</code> 通常用于对行内元素或文本进行样式化，而不改变文档的结构。</p>
+
+<hr/>
+
+<h2>创建表单</h2>
+
+<p><code>&lt;form&gt;</code> 创建表单
+    &lt;form action=&quot;#&quot;&gt;</p>
+
+<p>        &lt;label for=&quot;username&quot;&gt;用户名：&lt;/label&gt;</p>
+
+<p>        &lt;input type=&quot;text&quot; id=&quot;username&quot; placeholder=&quot;请输入内容&quot;&gt;</p>
+
+<p>        &lt;br&gt;&lt;br&gt;</p>
+
+<p>        &lt;label for=&quot;pwd&quot;&gt;密码：&lt;/label&gt;</p>
+
+<p>        &lt;input type=&quot;password&quot; id=&quot;pwd&quot; placeholder=&quot;请输入内容&quot;&gt;</p>
+
+<p>            &lt;br&gt;&lt;br&gt;</p>
+
+<p>        &lt;label&gt;性别：&lt;/label&gt;</p>
+
+<p>        &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt;男</p>
+
+<p>        &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt;女</p>
+
+<p>        &lt;input type=&quot;radio&quot; name=&quot;gender&quot;&gt;其他</p>
+
+<p>        &lt;br&gt;&lt;br&gt;</p>
+
+<p>        &lt;label&gt;爱好：&lt;/label&gt;</p>
+
+<p>        &lt;input type=&quot;checkbox&quot; name=&quot;hb&quot;&gt;唱歌</p>
+
+<p>        &lt;input type=&quot;checkbox&quot; name=&quot;hb&quot;&gt;弹琴</p>
+
+<p>        &lt;input type=&quot;checkbox&quot; name=&quot;hb&quot;&gt;跳舞</p>
+
+<p>        &lt;input type=&quot;checkbox&quot; name=&quot;hb&quot;&gt;读书</p>
+
+<p>        &lt;br&gt;</p>
+
+<p>        &lt;br&gt;</p>
+
+<p>        &lt;input type=&quot;submit&quot; value=&quot;点赞加三连&quot;&gt;</p>
+
+<p>    &lt;/form&gt;</p>
+
+<p>常见的 <code>type</code> 属性值包括：</p>
+
+<ol><li><code>text</code>：用于创建单行文本输入框。</li><li><code>password</code>：用于创建密码输入框，文本将被隐藏。</li><li><code>checkbox</code>：用于创建复选框，允许用户选择多个选项。</li><li><code>radio</code>：用于创建单选按钮，允许用户从一组选项中选择一个。</li><li><code>submit</code>：用于创建提交按钮，用户点击后将提交表单数据到服务器。</li><li><code>reset</code>：用于创建重置按钮，点击后将重置表单中的所有输入元素。</li><li><code>button</code>：用于创建普通按钮，可以通过 JavaScript 添加交互功能。</li><li><code>file</code>：用于创建文件上传输入框，允许用户选择上传文件。</li><li><code>email</code>：用于创建电子邮件地址输入框，浏览器可以验证输入的值是否符合电子邮件地址的格式。</li><li><code>number</code>：用于创建数字输入框，允许用户输入数字值。</li><li><code>date</code>：用于创建日期输入框，允许用户选择日期。</li><li><code>color</code>：用于创建颜色选择器，允许用户选择颜色。</li><li><code>range</code>：用于创建滑动条，允许用户在指定范围内选择一个值。</li><li><code>tel</code>：用于创建电话号码输入框，浏览器可以验证输入的值是否符合电话号码的格式。</li><li><code>url</code>：用于创建 URL 输入框，浏览器可以验证输入的值是否符合 URL 的格式。</li></ol>
+
+<hr/>
+
+<h2>CSS</h2>
+
+<p>CSS 中常用的属性包括：</p>
+
+<ol><li><p><strong>Color 相关属性：</strong></p><ul><li><code>color</code>：设置文本颜色。</li><li><p><code>background-color</code>：设置背景颜色。</p></li></ul></li><li><p><strong>字体相关属性：</strong></p><ul><li><code>font-family</code>：设置字体系列。</li><li><code>font-size</code>：设置字体大小。</li><li><p><code>font-weight</code>：设置字体粗细。</p></li></ul></li><li><p><strong>布局相关属性：</strong></p><ul><li><code>width</code>：设置元素的宽度。</li><li><code>height</code>：设置元素的高度。</li><li><code>margin</code>：设置元素外边距。</li><li><code>padding</code>：设置元素内边距。</li><li><code>display</code>：设置元素的显示方式（如块级元素、内联元素等）。</li><li><code>position</code>：设置元素的定位方式（如相对定位、绝对定位等）。</li><li><p><code>float</code>：设置元素的浮动方式。</p></li></ul></li><li><p><strong>文本样式相关属性：</strong></p><ul><li><code>text-align</code>：设置文本水平对齐方式。</li><li><code>text-decoration</code>：设置文本装饰（如下划线、删除线等）。</li><li><code>line-height</code>：设置行高。</li><li><p><code>white-space</code>：设置文本的空白处理方式（如换行处理、空格处理等）。</p></li></ul></li><li><p><strong>边框相关属性：</strong></p></li><li><code>border</code>：同时设置边框的宽度、样式和颜色，可以简写为一个属性。</li><li><p><code>border-width</code>：设置边框的宽度。</p></li><li><p><code>border-style</code>：设置边框的样式，如实线、虚线、点线等。
+<code>border-style</code>属性用于设置边框的样式，可以使用以下值：</p></li><li><p><code>none</code>：无边框。</p></li><li><code>hidden</code>：与<code>none</code>类似，但在某些情况下会留出空间，不会完全消失。</li><li><code>dotted</code>：点线边框。</li><li><code>dashed</code>：虚线边框。</li><li><code>solid</code>：实线边框。</li><li><code>double</code>：双线边框。</li><li><code>groove</code>：3D凹槽边框。</li><li><code>ridge</code>：3D凸起边框。</li><li><code>inset</code>：3D内凹边框。</li><li><code>outset</code>：3D外凸边框。</li></ol>
+
+<p>这些值可以单独使用，也可以组合使用，例如 <code>border-style: dashed solid double;</code> 将会创建一个由虚线、实线和双线组成的边框。</p>
+
+<ul><li><code>border-color</code>：设置边框的颜色。</li><li><code>border-radius</code>：设置边框的圆角半径，用于创建圆角边框。</li><li><code>border-image</code>：设置边框的图片，可以用图片来作为边框。</li></ul>
+
+<hr/>
+
+<h2>Javascript</h2>
+
+<p><code>var</code> variable 声明一个变量，用于声明全局变量或函数作用域内的变量
+<code>let</code> <strong>let</strong> 是 JavaScript 中用于声明变量的关键字之一，它是 ES6（ECMAScript 2015）引入的新特性之一。相比于旧版本的 <code>var</code> 关键字，<code>let</code> 具有更好的作用域规则和变量声明方式。
+<code>let</code> 是 JavaScript 中用于声明变量的关键字之一，它是 ES6（ECMAScript 2015）引入的新特性之一。相比于旧版本的 <code>var</code> 关键字，<code>let</code> 具有更好的作用域规则和变量声明方式。
+<code>const</code> constant 声明一个常量</p>
+
+<p>**使用 <code>let</code> 声明的变量具有以下特点：</p>
+
+<ol><li><p><strong>块级作用域</strong>：<code>let</code> 声明的变量具有块级作用域，即在 <code>{}</code> 内声明的变量只在该块内有效，超出块范围就无法访问。</p><p><code>javascript
+function example() {
+ if (true) {
+   let x = 10;
+   console.log(x); // 可以访问 x
+ }
+ console.log(x); // 报错，x 在块外不可见
+}
+example();
+</code></p></li><li><p><strong>不存在变量提升</strong>：使用 <code>let</code> 声明的变量不会发生变量提升，必须在声明后才能访问。</p><p><code>javascript
+console.log(y); // 报错，y 未声明
+let y = 20;
+</code></p></li><li><p><strong>不允许重复声明</strong>：在同一个作用域内不允许重复声明同名变量，否则会报错。</p><p><code>javascript
+let z = 30;
+let z = 40; // 报错，重复声明变量 z
+</code></p></li><li><p><strong>全局作用域</strong>：在全局作用域中使用 <code>let</code> 声明的变量不会成为全局对象的属性。</p><p><code>javascript
+let globalVar = 50;
+console.log(window.globalVar); // undefined，全局对象中不存在 globalVar
+</code></p></li></ol>
+
+<p><code>let</code> 的引入弥补了 <code>var</code> 的一些缺陷，使得 JavaScript 的变量声明和作用域规则更加清晰和可控。因此，现代 JavaScript 开发中推荐优先使用 <code>let</code> 来声明变量。</p>
+
+<hr/>
+
+<p><code>console.log</code> 在控制台中输出信息（对用户不可见）
+<code>alert</code> 弹出警告窗口（对用户可见）</p>
+
+<p><code>continue</code> 跳过下面的代码，直接进入下一循环
+<code>break</code> 打破循环，强制结束循环</p>
+
+<hr/>
+
+<h2>响应式布局常用代码</h2>
+
+<p><code>rem</code> - <strong>缩写的英文全称</strong>：Root Em
+- <strong>代码功能</strong>：<code>rem</code> 是 CSS 中的一个长度单位。它代表相对于根元素（通常是 <code>&lt;html&gt;</code> 元素）的字体大小来计算的相对单位。例如，如果根元素的字体大小是 16px，那么 1rem 就等于 16px。使用 <code>rem</code> 有助于创建响应式和可访问的设计，因为改变根元素的字体大小会相应地调整所有使用 <code>rem</code> 的元素的大小。</p>
+
+<hr/>
+
+<h2>事件绑定常用代码</h2>
+
+<p><strong>常用的事件字符串</strong>是指在使用 <code>addEventListener</code> 方法时常见的事件类型字符串。以下是一些常用的事件字符串：</p>
+
+<ol><li><p><strong>鼠标事件</strong>：</p><ul><li><code>click</code>：单击鼠标左键时触发。</li><li><code>dblclick</code>：双击鼠标左键时触发。</li><li><code>mousedown</code>：鼠标按下时触发。</li><li><code>mouseup</code>：鼠标松开时触发。</li><li><code>mousemove</code>：鼠标移动时触发。</li><li><code>mouseover</code>：鼠标移入元素时触发。</li><li><code>mouseout</code>：鼠标移出元素时触发。</li><li><code>mouseenter</code>：鼠标进入元素时触发（不冒泡）。</li><li><code>mouseleave</code>：鼠标离开元素时触发（不冒泡）。</li><li><p><code>contextmenu</code>：右键点击时触发上下文菜单事件。</p></li></ul></li><li><p><strong>键盘事件</strong>：</p><ul><li><code>keydown</code>：按下键盘上的任意键时触发。</li><li><code>keyup</code>：释放键盘上的键时触发。</li><li><p><code>keypress</code>：在按下并释放键盘上的键时触发（不常用）。</p></li></ul></li><li><p><strong>表单事件</strong>：</p><ul><li><code>submit</code>：提交表单时触发。</li><li><code>reset</code>：重置表单时触发。</li><li><code>input</code>：输入框内容改变时触发（包括输入、删除、粘贴等）。</li><li><p><code>change</code>：表单元素的值改变时触发（通常用于 <code>&lt;input&gt;</code>、<code>&lt;select&gt;</code>、<code>&lt;textarea&gt;</code> 等）。</p></li></ul></li><li><p><strong>窗口和文档事件</strong>：</p><ul><li><code>load</code>：文档或资源加载完成时触发。</li><li><code>unload</code>：窗口或框架被卸载时触发。</li><li><code>resize</code>：窗口大小改变时触发。</li><li><p><code>scroll</code>：元素滚动时触发。</p></li></ul></li><li><p><strong>焦点事件</strong>：</p><ul><li><code>focus</code>：元素获得焦点时触发。</li><li><code>blur</code>：元素失去焦点时触发。</li><li><code>focusin</code>：元素获得焦点时触发（冒泡）。</li><li><code>focusout</code>：元素失去焦点时触发（冒泡）。</li></ul></li></ol>
+
+<p>这些事件字符串用于指定要监听的事件类型，以便在元素触发相应的事件时执行相应的事件处理函数。可以根据需要选择合适的事件字符串来绑定事件。</p>
+      </div>
+    </section>
+    
+
+    <section class="p-5">
+        <div class="container">
+            <h2 class="text-center mb-3">联系我<s>们</s></h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">电话：158xxxxxxxx</li>
+                <li class="list-group-item">邮箱：15847007426@163.com</li>
+                <li class="list-group-item">地址：罗斯芒康市xx区</li>
+                
+              </ul>
+        </div>
+    </section>
+
+    <section class="p-5 bg-dark text-light">
+        <p class="lead text-center">
+            Copyright &copy; 2024 @智能的Eafen
+        </p>
+    </section>
+
+    <div class="text-end fixed-bottom">
+        <img src="https://img.icons8.com/?size=100&id=3je7Eeye4kzG&format=png&color=000000" alt="loading failed">
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
